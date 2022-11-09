@@ -1,0 +1,127 @@
+
+body{
+   
+    display: grid;
+    margin: 0px;
+    width: 100%;
+    height: 100vh;
+    background: rgb(216, 230, 241);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.head{
+    background-color: rgba(21, 51, 77, 0.493);
+    align-items: center;
+    width: 100%;;
+    display: flex;
+    height: 50px;
+    position: fixed;    
+    z-index: 100;
+    
+}
+
+.navbar{
+    display: flex;
+    margin-left: 100px;
+    width: 60%;
+
+    
+}
+.link{
+    display: block;
+    position: relative;
+    padding: 20px 15px 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.link::before{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    background-color: white;
+   
+}
+
+.link:hover:before{
+    transform: scaleX(1);
+}
+
+.audio{
+    position: fixed;
+    top: 600px;
+    left: 1040px;
+    z-index: 99;
+}
+
+.imgN{
+    width: 200px;
+    height: 100px;
+}
+
+.cuerpo1{
+    position: relative;
+    background-color: black;
+}
+.link2{
+    color: aliceblue;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.trailer{
+    z-index: 2;
+    background-color:rgba(240, 248, 255, 0.349);
+    position: absolute;
+    top: 220px;
+    left: 600px;
+    width: 148px;
+    height: 50px;
+}
+.netflix{
+    color: white;
+    position: absolute;
+    width: 200px;
+    top: 520px;
+}
+
+.sinopsis{
+    background-image: url(img/historia.jpg);
+    background-color: black;
+}
+
+h1{
+    margin-top: 40px;
+    margin-left: 500px;
+    color: rgb(231,209,189);
+}
+
+p{
+    color: rgb(231,209,189);
+    background-color: rgba(0, 0, 0, 0.425);
+    margin-top:50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.boton{
+    position: absolute;
+    top: 320px;
+    left: 627px;
+    background-color:rgba(231, 209, 189, 0.733) ;
+    border-style: none;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}

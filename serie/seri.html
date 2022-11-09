@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="serieCss.css">
+    <link rel="stylesheet" href="galeria.css">
+    <title>Serie</title>
+    <script>
+        function reproducirMusica(){
+            document.getElementById('mp3').play();
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="head" id="inicio">
+        <div class="logo">
+            <img src="../img/LOL_Logo (1).png" alt="" width="50px" height="50px">
+        </div>
+
+        <div class="navbar">
+            <a href="../index.html" class="link">Inicio</a>
+            <a href="#" class="link">Serie</a>
+            <a href="../formulario/formulario.html" class="link">Riot Games</a>
+        </div>
+    </div>
+    <div class="audio">
+        <audio id="mp3" style="display: flex;" src="enemy.mp3" loop="loop" controls></audio>
+    </div>
+    <div class="cuerpo1">
+
+        <img src="img/arcane.jpg" alt="" style="width:100%;">
+        <div>
+            <button class="boton" onclick="reproducirMusica()">Reproducir musica</button>
+        </div>
+
+    </div>
+    <div class="trailer"><a class="link2" href="https://www.youtube.com/watch?v=xPKN7MxS8TU">Mira el trailer!</a></div>
+    <div class="netflix"><a class="link2" href="https://www.netflix.com/title/81435684">Ya disponible en Netlix! <img
+                class="imgN" src="img/netflix.png" alt=""></a></div>
+    <div class="sinopsis">
+        <h1>sinopsis de ARCANE</h1>
+        <P >La historia se desarrollará en las siguientes dos ciudades: Piltover y Zaun. Aunque Arcane se
+            centra solo en
+            estas dos ciudades, e
+            stas pertenecen al mundo Runeterra. Piltover es la ciudad académica y científica y adinerada, mientras que
+            Zaun es todo lo contrario,
+            los suburbios, llenos de criminalidad, pobreza e infestado de productos químicos tóxicos, donde no hay
+            ningún tipo de autoridad.
+            Las tensiones y rivalidades que existen entre estas dos ciudades divide a familias y amigos como en el caso
+            de Vi y Powder, dos
+            hermanas zaunitas, o de Jayce y Viktor, dos amigos inventores y aprendices del legendario científico
+            Heimerdinger. Todas estas
+            relaciones se desbordarán con la creación de Hextech en Piltover, una tecnología con la que cualquier
+            persona es capaz de
+            controlar la energía mágica,
+            mientras que en Zaun una nueva droga transforma a los humanos en monstruos.</P>
+        <h1>UNA CASA DIVIDIDA</h1>
+        <P>Dos hermanas. Dos ciudades. Un descubrimiento que cambiará el mundo para siempre.
+
+            En las ciudades de Piltóver y Zaun, el descontento se asoma mientras que entre inventores y ladrones,
+            políticos y criminales, crece el hartazgo ante las restricciones de una sociedad fracturada. Al tiempo que
+            la disconformidad alcanza su punto más álgido, dos hermanas roban un artefacto de incalculable poder. El
+            descubrimiento y el peligro se entretejen mientras héroes nacen y los lazos se rompen. ¿Este poder cambiará
+            al mundo... o lo conducirá a la ruina? Este es el mundo de Arcane.
+        </P>
+        <h1 style="margin-left: 400px;">ALGUNAS IMAGENES DE LA SERIE</h1>
+        <div class="carusel" style="background-color: rgb(19,14,20);; ">
+            <!-- Contenedor global -->
+            <div class="container">
+      
+              <div class="foto fade">
+                <div class="numero">1 / 5</div>
+                <img src="img/arcane1.jpg" style="width:100%">
+              </div>
+      
+              <div class="foto fade">
+                <div class="numero">2 / 5</div>
+                <img src="img/arcane2.jpg" style="width:100%">
+              </div>
+      
+              <div class="foto fade">
+                <div class="numero">3 / 5</div>
+                <img src="img/arcane3.avif" style="width:100%">
+              </div>
+      
+              <div class="foto fade">
+                <div class="numero">4 / 5</div>
+                <img src="img/arcane4.webp" style="width:100%">
+              </div>
+      
+              <div class="foto fade">
+                <div class="numero">5 / 5</div>
+                <img src="img/arcane5.jpg" style="width:100%">
+              </div>
+              <!-- Botones Anterior y Siguiente -->
+              
+              <a class="anterior" onclick="navegarFoto(-1)">&#10094;</a>
+              <a class="siguiente" onclick="navegarFoto(1)">&#10095;</a>
+            </div>
+            <br>
+      
+            <!-- Círculos Indicadores -->
+            <div style="text-align:center">
+              
+              <span class="circulo" onclick="fotoActual(1)"></span>
+              <span class="circulo" onclick="fotoActual(2)"></span>
+              <span class="circulo" onclick="fotoActual(3)"></span>  
+              <span class="circulo" onclick="fotoActual(4)"></span> 
+              <span class="circulo" onclick="fotoActual(5)"></span>         
+            
+            </div>
+            <script type="text/javascript" src="galeria.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>

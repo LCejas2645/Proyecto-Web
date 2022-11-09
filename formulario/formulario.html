@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Proyecto LOL</title>
+
+    <script>
+        function validar() {
+            var nombre = document.form.nombre.value.trim();
+
+            if ((!nombre) || (nombre.length < 3)) {
+                alert("¡Ingrese un nombre válido!");
+                document.form.nombre.focus();
+                document.form.nombre.className = "incorrecto";
+                return false;
+            } else {
+                document.form.nombre.className = "normal";
+            }
+
+            var apellido = document.form.apellido.value.trim();
+
+            if ((!apellido) || (apellido.length < 3)) {
+                alert("¡Ingrese un apellido válido!");
+                document.form.apellido.focus();
+                document.form.apellido.className = "incorrecto";
+                return false;
+            } else {
+                document.form.apellido.className = "normal";
+            }
+
+            var edad = document.form.edad.value;
+            if ((!Number.parseInt(edad))) {
+                alert("¡ingrese una edad válida!");
+                document.form.edad.focus();
+                document.form.edad.className = "incorrecto";
+                return false;
+            } else {
+                if (edad < 18 || edad >= 100) {
+                    alert('¡La edad debe ser mayor o igual a 18 y menor a 100!');
+                    document.form.edad.focus();
+                    document.form.edad.className = "incorrecto";
+                    return false;
+                } else {
+                    document.form.edad.className = "normal";
+                }
+            }
+            var patronmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var email = document.form.email.value;
+
+            if (!patronmail.test(email)) {
+                alert("Debe ingresar un email valido");
+                // correo.className = "error";
+                document.form.email.focus();
+                document.form.email.className = "incorrecto";
+
+                return false;
+            } else {
+                document.form.email.className = "normal";
+            }
+            var mensaje = document.form.mensaje.value;
+            if (!mensaje) {
+                alert("Debe dejar un mensaje");
+                document.form.mensaje.focus();
+                document.form.mensaje.className = "incorrecto";
+                return false;
+            } else {
+                document.form.mensaje.className = "normal";
+            }
+
+            if (confirm("¿Está seguro que desea enviar sus datos?")) {
+                alert("Gracias por ponerte en contacto con nosotros.");
+                return true;
+            } else
+                return false;
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="head">
+        <div class="logo">
+            <img src="img/LOL_Logo (1).png" alt="imagen logo" width="50px" height="50px">
+        </div>
+
+        <div class="navbar">
+            <a href="../index.html" class="link">Inicio</a>
+            <a href="../serie/seri.html" class="link">Serie</a>
+            <a href="#" class="link">Riot Games</a>
+        </div>
+    </div>
+
+    <section class="formulario">
+
+        <div class="izquierda">
+            <h3>Redes sociales</h3>
+            <ul class="lista-redes">
+                <li><a href="" target="_blank"><img src="iconos/twitter.png" alt="imagen twitter" class="redes"> Twitter</a>
+                </li>
+                <li><a href="" target="_blank"><img src="iconos/facebook.png" alt="imagen facebook"  class="redes"> Facebook</a>
+                </li>
+                <li><a href="" target="_blank"><img src="iconos/instagram.png" alt="imagen instagram"  class="redes"> Instagram</a>
+                </li>
+            </ul>
+            <h3>Email</h3>
+            <p><img src="iconos/envelope.png" alt="imagen mail" class="redes">  emailDeEjemplo@gmail.com</p>
+        </div>
+
+        <form name="form" action="#" method="get">
+            <h2>Contacto</h2>
+            <p>Dejá un mensaje y te responderemos a la brevedad</p>
+            <input class="normal" type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input class="normal" type="text" name="apellido" id="apellido" placeholder="Apellido">
+            <input class="normal" type="text" name="edad" id="edad" placeholder="Edad">
+            <input class="normal" type="email" name="email" id="email" placeholder="Email">
+            <textarea id="mensaje" cols="20" rows="10" placeholder="Mensaje"></textarea>
+
+            <input id="boton" type="submit" value="Enviar" onclick="return validar()">
+        </form>
+        
+    </section>
+
+
+</body>
+
+</html>

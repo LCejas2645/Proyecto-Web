@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galeria.css">
+    <title>Proyecto LoL</title>
+</head>
+<body>
+    <div class="head" id="inicio">
+        <div class="logo">
+            <img src="img/LOL_Logo (1).png" alt="" width="50px" height="50px">
+        </div>
+
+        <div class="navbar">
+            <a href="#inicio" class="link">Inicio</a>
+            <a href="serie/seri.html" class="link">Serie</a>
+            <a href="formulario/formulario.html" class="link">Riot Games</a>
+        </div>
+    </div>
+    <div class="cuerpo">
+        <div style="background-color: rgba(0, 0, 0, 0.658);">
+            <h1 style="margin-top: 380px;margin-left: 540px;">Sobre el juego</h1>
+            <p style="padding: 20px;color: white;">
+             En la actualidad, League Of Legends, desarrollado por la empresa estadounidense Riot Games, y, lanzado en 2009, cuenta con más de 
+             120 millones de jugadores activos en todo el mundo. El videojuego de estrategia está dentro de la categoría de multijugador de 
+             arena de batalla en línea (MOBA, por sus siglas en inglés). Muchos lo comparan con el conocido juego World of Warcraft lanzado en
+             2004 y creen, en un principio, que fue una modificación mejorada del mismo.
+
+             Lo que hay que destacar de LoL, como se lo llama por su abreviatura, es que es un juego gratuito que se puede descargar del sitio
+             oficial y que no requiere una computadora último modelo para poder jugarlo, ya que corre en casi cualquier pc.
+            </p>
+         </div>
+    </div>
+    <div style="background-color: rgb(216, 230, 241); color: rgb(138, 119, 37);">
+        <h1 style="margin-left: 470px ;">Algunas imagenes in game</h1>
+    </div>
+    <div class="carusel" style="background-color: rgb(216, 230, 241); ">
+      <!-- Contenedor global -->
+      <div class="container">
+
+        <div class="foto fade">
+          <div class="numero">1 / 5</div>
+          <img src="img/ingame1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="foto fade">
+          <div class="numero">2 / 5</div>
+          <img src="img/ingame2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="foto fade">
+          <div class="numero">3 / 5</div>
+          <img src="img/ingame3.jpg" style="width:100%">
+
+        </div>
+
+        <div class="foto fade">
+          <div class="numero">4 / 5</div>
+          <img src="img/ingame4.png" style="width:100%">
+
+        </div>
+
+        <div class="foto fade">
+          <div class="numero">5 / 5</div>
+          <img src="img/ingame5.jpg" style="width:100%">
+
+        </div>
+        <!-- Botones Anterior y Siguiente -->
+        
+        <a class="anterior" onclick="navegarFoto(-1)">&#10094;</a>
+        <a class="siguiente" onclick="navegarFoto(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- Círculos Indicadores -->
+      <div style="text-align:center">
+        
+        <span class="circulo" onclick="fotoActual(1)"></span>
+        <span class="circulo" onclick="fotoActual(2)"></span>
+        <span class="circulo" onclick="fotoActual(3)"></span>  
+        <span class="circulo" onclick="fotoActual(4)"></span> 
+        <span class="circulo" onclick="fotoActual(5)"></span>         
+      
+      </div>
+      <script type="text/javascript" src="galeria.js"></script>
+    </div>
+    <div class="cuerpo2">
+        <h1 align="center " style="color:rgb(21, 51, 77)">Objetivo</h1>
+        <p style="color:rgb(21, 51, 77)">
+             En cada partida se forman dos equipos, uno rojo y otro azul, con cinco jugadores cada uno. 
+             El objetivo del juego es destruir el “nexo” rival, lo que sería el corazón, ubicado en la base enemiga.
+             Para lograr atacarlo es necesario “despejar un carril”, y trasladarse hasta el núcleo opuesto. Pero en cada 
+             camino se interponen defensas que habrá que destruir.
+
+             Antes de iniciar una partida, cada jugador deberá elegir entre 140 personajes o “campeones” que poseen 
+             distintas habilidades, hechizos y objetos que a la vez se vuelven más fuertes a medida que obtienen experiencia. 
+             Esto le permite a cada jugador subir de nivel y, junto con la acumulación de oro, tener la posibilidad de comprar y
+             vender otros objetos durante el transcurso del juego. Cabe aclarar que el oro dentro del mapa se consigue matando personajes 
+             como súbditos o monstruos, así como eliminando a jugadores del enemigo.
+        </p>
+    </div>
+    <div style="background-color: rgb(21, 51, 77);margin:30px 15px 30px 15px; border-style:double;"><h1 align="center">Roles</h1></div>
+    <div class="roles">
+      <div class="containerroles">
+        <div class="rol luchador">
+          <img src="img/fig.jpg" alt="luchador" class="img">
+          <div class="des">
+            <h1 class="h">Luchador</h1>
+            <p>Los luchadores son esos personajes de brava apariencia y no es para menos ya que éstos son los que
+               más daño físico tienen junto a una&nbsp;gran resistencia.</p>
+          </div>
+        </div>
+        <div class="rol tanque">
+          <img src="img/tank.png" alt="tanque" class="img">
+          <div class="des">
+            <h1 class="h">Tanque</h1>
+            <p>Los personajes tanque son aquellos que tienen mucha vida y algo más de armadura,
+               por lo que si su equipo se centra en ampliar armadura y vida serán&nbsp;indestructibles. </p>
+          </div>
+        </div>
+        <div class="rol mago">
+          <img src="img/mage.png" alt="mago" class="img">
+          <div class="des">
+            <h1 class="h">Mago</h1>
+            <p>Los magos, como su nombre indica, basan sus habilidades en la&nbsp;magia&nbsp;por lo que su equipo se compondrá
+               de ítems que aumente esta magia.</p>
+          </div>
+        </div>
+        <div class="rol asasin">
+          <img src="img/as.jpg" alt="asasin" class="img">
+          <div class="des">
+            <h1 class="h">Asesino</h1>
+            <p>Como su nombre indica, estos personajes lo que buscan es matar, los asesinos se caracterizan por ser sutiles matando al rival.</p>
+          </div>
+        </div>
+        <div class="rol tirador">
+          <img src="img/adc.png" alt="tirador" class="img">
+          <div class="des">
+            <h1 class="h">Tirador</h1>
+            <p>Estos campeones a menudo atacan físicamente y causan daño a largas distancias. 
+              Estos personajes son los encargados de ingresar a la línea&nbsp;del bot.</p>
+          </div>
+        </div>
+        <div class="rol suport">
+          <img src="img/sup.jpg" alt="sup" class="img">
+          <div class="des">
+            <h1 class="h">Soporte</h1>
+            <p>Los supports  se encargan de proteger y ayudar al resto de jugadores 
+              curando o aumentando sus estadísticas dentro de la partida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cuerpo3">
+        <h1 class="cuerpo3h">Inicios</h1>
+        <p class="cuerpo3p" style="margin-top: 200px;";>
+            Lo primero que se hace al comenzar la partida, una vez ya asignados los campeones, es elegir un carril de la Grieta del 
+            Invocador: superior, central o inferior.
+            <br>
+            En cada uno de éstos, los personajes se encontrarán con tres torretas, las cuales provocan daño a los súbditos, que son criaturas
+         que se generan automáticamente y acompañan a los campeones en la batalla. Entre los distintos carriles para llegar a la base enemiga
+          se encuentra la jungla, lugar en el que residen monstruos y también están los Dragones. Éstos intentarán dañar a los campeones y
+           dificultar llegar a la base enemiga, tanto para uno como para el otro equipo. Es por eso que además de enfrentarse al conjunto rival, 
+           y tratar de eliminarlo para poder avanzar en el mapa, se debe luchar contra monstruos y dragones. En caso de asesinar a alguno de éstos
+            se obtendrán habilidades adicionales.
+        </p>  
+        
+        <div class="imgmapa"><img style="width: 1200px;height: 900px;" src="img/mapa.png" alt=""></div>
+    </div>
+    <div class="pie">
+      <div class="vid"><video src="img/ss2020_lux_sylas_1920x1080.mp4" autoplay loop muted></video></div>
+      <div class="mas"><a class="lol" href="https://www.leagueoflegends.com/es-mx/" target="_blank">Conoce mas!</a></div>
+    </div>
+
+</body>
+</html>

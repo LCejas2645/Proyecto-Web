@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(216, 230, 241);
+    background-image: url(img/fondoCuerpo1.png);
+}
+
+.formulario {
+    margin: 60px auto;
+    width: 850px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.izquierda {
+    float: left;
+    width: 500px;
+    color: rgb(216, 230, 241);
+    padding: 60px 30px 60px 90px;
+    box-sizing: border-box;
+}
+
+.izquierda h3 {
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.lista-redes li {
+    padding: 5px;
+    list-style: none;
+}
+
+.lista-redes li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.lista-redes li a:hover {
+    color: rgb(216, 230, 241);
+}
+
+.redes {
+    width: 20px;
+}
+.izquierda p{
+    color: white;
+    font-size: 20px;
+}
+
+form {
+    box-shadow: 10px 10px 20px black;
+    width: 400px;
+    background-color: rgb(21, 51, 77);
+    /*#092327;*/
+    margin: 0px auto;
+    text-align: center;
+    padding: 20px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+    right: 0;
+}
+
+form h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+form p {
+    margin: 0 auto;
+    color: rgb(216, 230, 241);
+    text-align: left;
+    font-size: 15px;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.normal:focus {
+    outline: 2px solid #092327;
+    /*rgb(21, 51, 77);*/
+    border-style: none;
+    background-color: rgb(21, 51, 77);
+    /*background-color: #092327;*/
+
+}
+
+.incorrecto:focus {
+    outline: 1px solid red;
+    border-style: none;
+    background-color: rgb(21, 51, 77);
+    /*background-color: #092327;*/
+}
+
+::placeholder {
+    color: rgb(216, 230, 241);
+}
+
+input {
+    margin: 15px auto;
+    display: block;
+    padding: 10px;
+    border-style: none;
+    border-bottom: 1px solid white;
+    width: 300px;
+    box-sizing: border-box;
+    background-color: rgb(21, 51, 77);
+    /*background-color: #092327;*/
+    color: white;
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    margin: 15px;
+    width: 300px;
+    height: 130px;
+    padding: 10px;
+    box-sizing: border-box;
+    /*background-color: #092327;*/
+    background-color: rgb(21, 51, 77);
+    border: 1px solid white;
+    overflow: auto;
+    resize: none;
+    color: white;
+}
+
+#boton {
+    border-style: none;
+    background-color: #1894c5;
+    width: 300px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+#boton:hover {
+    background-color: #1cbfff;
+}
